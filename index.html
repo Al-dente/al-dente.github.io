@@ -24,6 +24,14 @@
 	      <script type="text/javascript">
 		     
 		$(function(){
+			// Initialize jRumble on Selector
+			$('#rumble-element').jrumble();
+			
+			// Start rumble on element
+			$('#rumble-element').trigger('startRumble');
+
+			// Stop rumble on element
+			$('#rumble-element').trigger('stopRumble');
 			debugger;
 			val a = $("#test");
 			val b = $(".logo");
