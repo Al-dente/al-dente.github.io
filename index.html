@@ -28,15 +28,6 @@
     <script src="js/jquery.jrumble.1.3.min.js"></script> 
     <script src="js/prettify.js"></script>
     <script>
-      //$(document).snowfall('clear');
-      //document.body.className  = "darkBg";
-      //$('.collectonme').show();
-      $(document).snowfall({
-        collection: '.photo',
-        flakeCount: 100,
-        flakeColor: '#000000'
-      });
-      
       $(document).ready(function(){
         $('.logo').jrumble();
 
@@ -55,6 +46,16 @@
           $(this).trigger('stopRumble');
         }
       );
+    </script>
+    <script type='text/javascript'>
+      //$(document).snowfall('clear');
+        //document.body.className  = "darkBg";
+        //$('.collectonme').show();
+        $(document).snowfall({
+          collection: '.photo',
+          flakeCount: 100,
+          flakeColor: '#000000'
+        });
     </script>
   </body>
 </html>
