@@ -39,7 +39,11 @@
       $(document).snowfall('clear');
       //document.body.className  = "darkBg";
       $('.collectonme').show();
-      $(document).snowfall({collection : '.collectonme', flakeCount : 250});
+      $(document).snowfall({
+        collection: '.collectonme',
+        flakeCount: 250,
+        flakeColor: black
+      });
       
       $(document).ready(function(){
         $('.logo').jrumble();
